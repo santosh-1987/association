@@ -1,0 +1,12 @@
+<html>
+<body bgcolor="teal">
+<h2>student record</h2>
+<br/>
+<br/>
+<%=form_for :user,:url=>{:controller=>"student",:action=>"create",:id=>@fetch.id} do |f| %>
+<p>name<%=f.text_field :name%></p>
+<p>age<%=f.text_field :age%></p>
+<%=f.submit "submit"%>	
+<%end%>
+</body>
+</html>
